@@ -17,10 +17,13 @@ import Footer from "./Footer";
 //import Account from "./Account";
 import {useRef } from "react";
 
+
 const Dashboard: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [taskDrawerOpen, setTaskDrawerOpen] = useState(false);
   const dashboardRef = useRef<HTMLDivElement>(null);
+
+ 
 
   return (
     <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -108,9 +111,82 @@ const Dashboard: React.FC = () => {
             marginBottom:3
           }}
         >
+          
+          <Account />
+        </Box>
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: 1000,
+            bgcolor: "#fff",
+            borderRadius: 3,
+            boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+            p: { xs: 3, md: 4 },
+            marginBottom:3
+          }}
+        >
+          
           <Account />
         </Box>
         
+        <Box
+          sx={{
+            width: { xs: "95%", sm: 700, md: 900 },
+            maxWidth: "100%",
+            mt: { xs: 2, md: 8 },
+            bgcolor:"#fff",
+             borderRadius: 3,
+            boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+            //p: { xs: 3, md: 4 },
+          }}
+        >
+          
+          <TodosDashboard />
+        </Box>
+
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: 1000,
+            bgcolor: "#fff",
+            borderRadius: 3,
+            boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+            p: { xs: 3, md: 4 },
+            marginBottom:3
+          }}
+        >
+          
+          <Account />
+        </Box>
+
+        <Box
+          sx={{
+            width: { xs: "95%", sm: 700, md: 900 },
+            maxWidth: "100%",
+            mt: { xs: 2, md: 8 },
+            bgcolor:"#fff",
+             borderRadius: 3,
+            boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+            //p: { xs: 3, md: 4 },
+          }}
+        >
+          
+          <TodosDashboard />
+        </Box>
+
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: 1000,
+            bgcolor: "#fff",
+            borderRadius: 3,
+            boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+            p: { xs: 3, md: 4 },
+            marginBottom:3
+          }}
+        >
+          <Account />
+        </Box>
       </Box>
      <Footer/>
           

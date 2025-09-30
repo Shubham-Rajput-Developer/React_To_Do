@@ -12,3 +12,16 @@ declare module 'html2pdf.js'{
   const html2pdf: any;
   export default html2pdf;
 }
+
+
+import "jspdf";
+
+declare module "jspdf" {
+  interface jsPDF {
+    getNumberOfPages(): number;
+    setPage(pageNumber: number): jsPDF;
+    lastAutoTable?: {
+      finalY: number;
+    };
+  }
+}
